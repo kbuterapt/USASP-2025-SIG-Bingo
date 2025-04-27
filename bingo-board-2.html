@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO Board 2</title>
+    <style>
+        .bingo-board {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .bingo-cell {
+            border: 1px solid #333;
+            padding: 20px;
+            cursor: pointer;
+            background-color: #f4f4f4;
+        }
+        .bingo-cell:hover {
+            background-color: #ccc;
+        }
+        .free-space {
+            background-color: #f2b4b4;
+        }
+        .bingo-cell.selected {
+            background-color: #3e8e41;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>BINGO Board 2</h1>
+    <div class="bingo-board">
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Applied for an NIH grant <br> Has gone through the rigorous process of submitting an NIH grant.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Conducted or conducting an RCT <br> Is running or has run a randomized clinical trial on pain.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Practices yoga or mindfulness regularly <br> Can help you find your breath between sessions.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Published on pain disparities <br> Has published research on differences in pain experiences across groups.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Conducted a systematic review <br> Synthesized tons of research to answer a big pain science question.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Knows a fun Chicago fact <br> Knows what the stars on the Chicago flag mean.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Interested in pain epidemiology <br> Studies population-level patterns of pain.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Interested in pediatric pain <br> Studies or is curious about how kids experience and manage pain.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Tried deep dish pizza during the meeting <br> Can debate Giordano’s vs. Lou Malnati’s like a local.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Loves to cook or bake for fun <br> Might trade data tips for sourdough tips.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Studies pain prevention <br> Focuses on ways to prevent pain rather than just treating it.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Can recommend a good podcast or audiobook <br> Your future travel buddy's playlist curator.</div>
+        <div class="bingo-cell free-space" onclick="this.classList.toggle('selected')">FREE SPACE <br> Say hi to someone new!</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Member of more than one SIG <br> Juggles more than one research hat.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Is a morning person (for real) <br> Has already had 2 coffees and answered 10 emails.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Has tips for navigating McCormick Place <br> A conference maze master.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Has clinical rehab experience <br> Has worked directly with patients in rehabilitation settings.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Uses brain imaging in their research <br> Their research includes fMRI, EEG, or similar techniques.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Teaches or mentors trainees <br> Shares their knowledge with the next generation of researchers.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Studies movement-based interventions <br> Researches how moving helps with pain.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Walked the Chicago Riverwalk <br> Got their steps in along the scenic waterway.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Collaborates with an international team <br> Has research partners around the globe!</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Knows where the best conference snacks are <br> Snack connoisseur. Trust them.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">On an editorial board <br> Reviews and curates research for a scientific journal.</div>
+        <div class="bingo-cell" onclick="this.classList.toggle('selected')">Passionate about equity in science <br> Advocates for inclusion and fairness in research.</div>
+    </div>
+</body>
+</html>
