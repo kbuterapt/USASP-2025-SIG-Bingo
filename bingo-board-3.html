@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO Board 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .bingo-board {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .card-item {
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card-item:hover {
+            background-color: #e1e1e1;
+        }
+        .card-item.clicked {
+            background-color: #28a745;
+            color: white;
+        }
+        .card-item span {
+            font-weight: bold;
+        }
+        .card-item p {
+            font-size: 0.8em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bingo-board">
+    <div class="card-item">
+        <span>Researches exercise for pain relief</span><br>
+        <p>How do exercise interventions affect pain in chronic conditions?</p>
+    </div>
+    <div class="card-item">
+        <span>Experienced in research with older adults</span><br>
+        <p>What’s the biggest challenge when working with older adults in pain research?</p>
+    </div>
+    <div class="card-item">
+        <span>Attended a pain conference before</span><br>
+        <p>What was your most valuable takeaway from a pain conference?</p>
+    </div>
+    <div class="card-item">
+        <span>Knows a fun Chicago fact</span><br>
+        <p>Tell me your Chicago fact and where you learned it from?</p>
+    </div>
+    <div class="card-item">
+        <span>Participated in interdisciplinary research</span><br>
+        <p>How has interdisciplinary research improved your findings?</p>
+    </div>
+    <div class="card-item">
+        <span>Can recommend a good podcast or audiobook</span><br>
+        <p>Tell me your favorite professional-focused one and leisure-focused one!</p>
+    </div>
+    <div class="card-item">
+        <span>Likes working with movement-based interventions</span><br>
+        <p>What’s the most effective movement-based intervention you’ve seen?</p>
+    </div>
+    <div class="card-item">
+        <span>Has clinical rehab experience</span><br>
+        <p>What’s a key lesson from working with patients who have pain?</p>
+    </div>
+    <div class="card-item">
+        <span>Studies chronic pain and disability</span><br>
+        <p>What’s the most surprising thing you’ve learned about chronic pain?</p>
+    </div>
+    <div class="card-item">
+        <span>Participated in a clinical trial</span><br>
+        <p>What did you find most challenging about being in a clinical trial?</p>
+    </div>
+    <div class="card-item">
+        <span>Traveled by airplane to get here</span><br>
+        <p>What’s the longest flight you’ve ever taken?</p>
+    </div>
+    <div class="card-item">
+        <span>FREE SPACE</span><br>
+        <p>Say hi to someone new!</p>
+    </div>
+    <div class="card-item">
+        <span>Has worked in pain assessment</span><br>
+        <p>What’s the most effective way to assess pain in a clinical setting?</p>
+    </div>
+    <div class="card-item">
+        <span>Experienced in grant writing</span><br>
+        <p>What’s the hardest part about writing a grant proposal?</p>
+    </div>
+    <div class="card-item">
+        <span>Been involved in a pain rehab program</span><br>
+        <p>What’s the key to success in pain rehabilitation programs?</p>
+    </div>
+    <div class="card-item">
+        <span>Uses animal models in research</span><br>
+        <p>What’s an ethical consideration when using animal models?</p>
+    </div>
+    <div class="card-item">
+        <span>Has published in a pain journal</span><br>
+        <p>Tell me more about your findings!</p>
+    </div>
+    <div class="card-item">
+        <span>Attended a pain research workshop</span><br>
+        <p>Tell me more about what you learned!</p>
+    </div>
+    <div class="card-item">
+        <span>Studied movement-based interventions</span><br>
+        <p>How has studying movement interventions changed your approach?</p>
+    </div>
+</div>
+
+<script>
+    function toggleCard(card) {
+        card.classList.toggle('clicked');
+    }
+</script>
+
+</body>
+</html>
