@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Board 2</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; padding: 20px; }
+        h1 { text-align: center; }
+        .bingo-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px; }
+        .cell {
+            padding: 15px; 
+            background-color: white; 
+            border: 2px solid #333; 
+            text-align: center; 
+            cursor: pointer; 
+            user-select: none;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 14px;
+        }
+        .cell.clicked { background-color: #4CAF50; color: white; }
+        a { display: block; margin-top: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Bingo Board 2</h1>
+    <div class="bingo-grid">
+        <div class="cell">Sample item 1</div>
+<div class="cell">Sample item 2</div>
+<div class="cell">Sample item 3</div>
+<div class="cell">Sample item 4</div>
+<div class="cell">Sample item 5</div>
+<div class="cell">Sample item 6</div>
+<div class="cell">Sample item 7</div>
+<div class="cell">Sample item 8</div>
+<div class="cell">Sample item 9</div>
+<div class="cell">Sample item 10</div>
+<div class="cell">Sample item 11</div>
+<div class="cell">Sample item 12</div>
+<div class="cell">Sample item 13</div>
+<div class="cell">Sample item 14</div>
+<div class="cell">Sample item 15</div>
+<div class="cell">Sample item 16</div>
+<div class="cell">Sample item 17</div>
+<div class="cell">Sample item 18</div>
+<div class="cell">Sample item 19</div>
+<div class="cell">Sample item 20</div>
+<div class="cell">Sample item 21</div>
+<div class="cell">Sample item 22</div>
+<div class="cell">Sample item 23</div>
+<div class="cell">Sample item 24</div>
+<div class="cell">Sample item 25</div>
+    </div>
+    <a href="index.html">Back to Board Selection</a>
+    <script>
+        document.querySelectorAll('.cell').forEach(cell => {
+            cell.addEventListener('click', () => {
+                cell.classList.toggle('clicked');
+            });
+        });
+    </script>
+</body>
+</html>
