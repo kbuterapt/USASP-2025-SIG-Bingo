@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Boards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            font-size: 1.2em;
+        }
+        .buttons-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bingo-link {
+            text-decoration: none;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 1.4em;
+            width: 100%;
+            max-width: 300px;
+            transition: background-color 0.3s ease;
+        }
+        .bingo-link:hover {
+            background-color: #45a049;
+        }
+        @media (min-width: 600px) {
+            .buttons-container {
+                flex-direction: row;
+                gap: 20px;
+            }
+            .bingo-link {
+                width: auto;
+                padding: 15px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Time for USASP 2025 SIG Networking BINGO</h1>
+    <p>Click a BINGO board to start networking with your fellow pain colleagues!</p>
+
+    <div class="buttons-container">
+        <a href="bingo-board-1.html" class="bingo-link">Bingo Board 1</a>
+        <a href="bingo-board-2.html" class="bingo-link">Bingo Board 2</a>
+    </div>
+
+    <p>Click a button to open one of the Bingo Boards!</p>
+
+</body>
+</html>
